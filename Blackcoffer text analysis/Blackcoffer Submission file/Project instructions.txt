@@ -1,0 +1,36 @@
+Project instructions
+
+Overview:
+This project involves extracting textual data from a list of URLs, performing text analysis, 
+and computing various variables based on the specified output structure. The computed results 
+are saved in an Excel file in the same order as the output structure file.
+
+Approach:
+Data Collection:
+
+URLs are provided in an Excel file (Input.xlsx).
+Python script uses web scraping (BeautifulSoup) to extract article text from each URL.
+
+Text Analysis:
+
+Text analysis is performed on the extracted article text.
+Sentiment analysis is conducted using the TextBlob library.
+Additional metrics such as average sentence length, percentage of complex words, and Fog Index
+are computed.
+
+Dependencies:
+
+Ensure you have the necessary Python libraries installed such as beautiful soup, nltk, pandas.
+
+How to Run:
+
+Save the URLs in an Excel file named Input.xlsx with columns 'URL_ID' and 'URL'.
+Run the Python script (script.py) to perform the data extraction and analysis:
+bash
+
+python script.py
+The results will be saved in an Excel file named Output.xlsx.
+Output Structure:
+
+The output file (Output.xlsx) contains the computed variables in the exact order specified in the 
+output structure file.
